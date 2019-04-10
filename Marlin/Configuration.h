@@ -558,10 +558,10 @@
  */
 #define X_DRIVER_TYPE  TMC2208_STANDALONE // comment out for stock drivers
 #define Y_DRIVER_TYPE  TMC2208_STANDALONE // comment out for stock drivers
-#define Z_DRIVER_TYPE  TMC2208_STANDALONE // comment out for stock drivers
+//#define Z_DRIVER_TYPE  TMC2208_STANDALONE // comment out for stock drivers
 #define X2_DRIVER_TYPE TMC2208_STANDALONE
 #define Y2_DRIVER_TYPE TMC2208_STANDALONE
-#define Z2_DRIVER_TYPE TMC2208_STANDALONE // comment out for stock drivers
+//#define Z2_DRIVER_TYPE TMC2208_STANDALONE // comment out for stock drivers
 #define E0_DRIVER_TYPE TMC2208_STANDALONE // comment out for stock drivers
 #define E1_DRIVER_TYPE TMC2208_STANDALONE // comment out for stock drivers
 #define E2_DRIVER_TYPE TMC2208_STANDALONE
@@ -621,7 +621,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 500, 500, 6, 60 }
+#define DEFAULT_MAX_FEEDRATE          { 500, 120, 6, 60 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -856,7 +856,7 @@
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false // set to true for stock drivers or TMC2208 with reversed connectors
 #define INVERT_Y_DIR true // set to false for stock drivers or TMC2208 with reversed connectors
-#define INVERT_Z_DIR true // set to false for stock drivers or TMC2208 with reversed connectors
+#define INVERT_Z_DIR false // set to false for stock drivers or TMC2208 with reversed connectors
 
 // @section extruder
 
